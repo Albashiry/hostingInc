@@ -1,0 +1,375 @@
+/* import scss navbar
+@import url(sass/dropdown.css);*/
+
+body{padding-top: 70px;/*overflow: hidden;*/}
+/*h1,h2,h3,h4,h5,.lead{font-family: 'Chivo Mono', monospace;}*/
+
+ /***** start overridding bootstrap *****/
+/* navbar link */
+.navbar-dark .navbar-nav .nav-link {font-size: 18px;}
+
+/* brand name */
+.navbar-dark .navbar-brand {font-size: 1.5rem;}
+/* dropdown menu */
+.navbar-nav .dropdown-menu{
+    min-width: 200px;
+    left: auto;
+    right: 0;
+}
+.dropdown-item{padding: 0.5rem 1rem; transition: padding 0.25s ease;}
+.dropdown-item:hover{padding-left: 1.5rem;}
+
+/* carousel */
+.carousel img{max-height: 25rem;}
+.carousel-caption {
+    bottom: 8rem;
+    text-shadow: 1px 1px 2px black,
+                 0px 0px 25px blue,
+                 0px 0px 5px darkblue;
+}
+.carousel-indicators{padding: 2px;}
+.carousel-indicators [data-bs-target]{height: 5px; width: 50px;}
+/* end overriding bootstrap*/
+
+/*start section toolbox*/
+.optionBox{
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    z-index: 2;
+}
+.optionBox .colorOption{
+    float: left;
+    padding: 1rem;
+    width: 12.5rem;
+    display:none;
+}
+.optionBox .colorOption ul li{
+    width: 1.25rem;
+    height: 1.25rem;
+    display: inline-block;
+    margin-right: 0.1rem;
+}
+.optionBox .gearCheck{padding: 0.2rem;}
+/*end section toolbox*/
+
+/*start section about*/
+.about .lead{font-size: 25px; margin-top: 15px;}
+.about h3{font-weight: bold;}
+
+/* start features */
+.features{padding: 3rem 0; overflow: hidden;}
+.features .feature{margin-bottom: 2rem;}
+.features .feature p{line-height: 1.5em;}
+.features .feature span.ace-icon{font-size: 25px; margin-bottom: 1.5rem;}
+/* end features */
+
+/*start testimonial carousel */
+.testimonial{padding: 3rem 0;}
+.testimonial .lead{line-height: 1.5em;}
+.testimonial .carousel-item{min-height: 12em;}
+.testimonial .carousel-item span{font-size: 1.1em; font-weight: bold;}
+.testimonial .carousel-indicators{
+    position: static;
+    width: 100%;
+    margin-left: auto;
+    padding-top: 1.25em;
+}
+.testimonial .carousel-indicators button{
+    box-shadow: 1px 1px 1px 1px gray;
+    text-indent: 0;
+    width: 5em;
+    height: 5em;
+    border: 3px solid #FFFFFF;
+    opacity: 0.5;
+    margin: 5px;
+    transition: all 0.5 ease;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.testimonial .carousel-indicators button img{max-width: 100%;}
+.testimonial .carousel-indicators button.active{
+    opacity: 1;
+    background-color: none;
+    width: 5em;
+    height: 5em;
+}
+/*end testimonial carousel */
+/*start price table*/
+.price-table{padding: 2.5em; overflow: hidden;}
+.price-table .price-box{
+    border: 1px solid #DDD;
+    padding: 0.9em;
+    margin-bottom: 1em;
+}
+.price-table .price-box h2{margin: 5px 0 15px 0;}
+.price-table .price-box p{
+    font-size: 2em;
+    font-weight: bold;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    line-height: 2.5em;
+    transition-duration: 0.7s;
+}
+.price-table .price-box:hover p{transform: scale(1.1, 1.1) rotate(360deg);}
+.price-table .price-box ul{line-height: 250%; font-size: 1em;}
+.price-table .price-box a{margin-bottom: 5px;}
+/*end price table*/
+/*start section team*/
+.team{
+    width: 100%;
+    min-height: 37.7em;
+    overflow: hidden;
+}
+.team .t1{
+    background-color: rgba(3, 3, 3, 0.75);
+    color: white;
+    min-height: 37.7em;
+}
+.team .person{margin-bottom: 2em;}
+.team .person img{width: 10em;}
+/*end section team*/
+/*start section subscribe*/
+.subscribe p{ margin-bottom: 2em;}
+.subscribe .form-control{
+    border-radius: 0;
+    margin-right: -5px;
+    width: 20em;
+    display: inline-block;
+    padding: 0.24rem 0.375rem 0.53rem 0.375rem;
+}
+.subscribe button{border-radius: 0; font-size: 0.8em;}
+/*end section subscribe*/
+/*start section statistics*/
+.statistics{
+    min-height: 30em;
+}
+.statistics .data{
+    min-height: 30em;
+    width: 100%;
+}
+.statistics p{
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+.statistics span{font-size: 1.1em;}
+.statistics .stats{transition: all 0.5s ease-in-out;}
+/*start section statistics*/
+/*strart section skills*/
+.skills h3{font-weight: bold; margin-top:0;}
+.skills .progress{height: 2rem; margin: 1.5rem;}
+.skills .progress-bar{
+    line-height: 2em;
+    font-size: 1rem;
+    text-align: left;
+    text-indent: 0.5em;
+}
+/*end section skills*/
+/*start section contact*/
+.contact{
+    min-height: 30em;
+}
+.contact .field{
+    background-color: rgba(3, 3, 3, 0.5);
+    min-height: 30em;
+    color: #DDD;
+}
+.contact p{margin-bottom: 2.5em;}
+.contact textarea{height: 6.75rem;}
+.contact input[type='text'], .contact textarea{
+    background-color: rgba(82, 78, 78, 0.9);
+    color: #FFF;
+    border: none;
+    font-size: 1.45rem;
+}
+/*end section contact*/
+/*start section clients*/
+.clients{background-color: #EEE;}
+.clients img{
+    opacity: 0.5;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transition: all 0.4s ease-in-out;
+    
+    height: 2.5rem; width: 90%;
+    /*aspect-ratio: 16/9;
+    object-fit: contain;
+    mix-blend-mode: color-burn;*/
+}
+.clients img:hover{opacity: 1;}
+/*end section clients*/
+/*start section footer*/
+.footer h3{letter-spacing: 1px; margin: 1.5rem 0 2rem 0;}
+.footer .tricol{overflow: hidden;}/*to make list items float*/
+.footer .tricol li{
+    width: 33.3333%;
+    float: left;
+    padding: 1rem;
+}
+.footer .social{overflow: hidden; margin: 1.5rem 0 2rem 0;}
+.footer .social li{
+    float: left;
+    margin: 0.3rem;
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+}
+.footer .social li:hover{opacity: 1;}
+.footer .img-thumbnail{
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid #444;
+    margin-bottom: 0.3rem;
+    width: 49%;
+    height: 8rem;
+}
+.footer .copyright{
+    background-color: #212529;
+    padding: 1rem 0;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+.footer .copyright span{color: var(--baseColor);}
+/*end section footer*/
+
+/*start loading section*/
+.loading{
+    background-color: #333;
+    color: #FFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+/*
+.lds-heart {
+    display: inline-block;
+    position: relative;
+    width: 50rem;
+    height: 50rem;
+    transform: rotate(45deg);
+    transform-origin: 1rem 1rem;
+  }
+  .lds-heart div {
+    top: -20rem;
+    left: 35rem;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background: #f00;
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .lds-heart div:after,
+  .lds-heart div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background: #f00;
+  }
+  .lds-heart div:before {left: -24px; border-radius: 50% 0 0 50%;}
+  .lds-heart div:after {top: -24px; border-radius: 50% 50% 0 0;  }
+  @keyframes lds-heart {
+    0% {transform: scale(0.95);}
+    5% {transform: scale(1.1);}
+    39%{transform: scale(0.85);}
+    45%{transform: scale(1);}
+    60%{transform: scale(0.95);}
+    100%{transform: scale(0.9);}
+  }*/
+
+.spinner {
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    background-color: #d61616;  
+    border-radius: 100%;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+@keyframes sk-scaleout {
+    0% {transform: scale(0);} 
+    100%{transform: scale(1.0); opacity: 0;}
+}
+/*end loading section*/
+
+/*start scroll top*/
+#scrollButton{
+    width: 3rem;
+    height: 2.5rem;
+    color: #DDD;
+    background-color: #272727;
+    text-align: center;
+    padding-bottom: 1px;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 9999;
+    cursor: pointer;
+    display: none;
+}
+#scrollButton:hover{background-color: #444;}
+/*end scroll top*/
+/*start our grouping*/
+.team,.statistics,.contact{
+    background-image: url(../images/background.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.about .h1,
+.features .h1,
+.testimonial .h1,
+.price-table .h1,
+.statistics .h1,
+.subscribe .h1,
+.team .h1,
+.skills .h1{margin-bottom: 2.5rem;}
+
+.about,
+.subscribe,
+.skills,
+.statistics .data,
+.clients,.contact .field,
+.footer{padding-top: 1.5rem; padding-bottom: 1.5rem;}
+/*end grouping
+
+/* media query for xs screen size*/
+
+/* X-Small devices (portrait phones, less than 576px)*
+@media (max-width: 575.98px) { ... }
+
+/* Small devices (landscape phones, 576px and up)*
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+/* Medium devices (tablets, 768px and up)*
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+/* Large devices (desktops, 992px and up)*
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+/* X-Large devices (large desktops, 1200px and up)*
+@media (min-width: 1200px) and (max-width: 1399.98px) { ... }
+
+/* XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }*/
+@media screen and (max-width:575px) {
+    .about h1{
+        visibility: hidden;
+    }
+    a.nav-link{
+        padding: 0.3rem 0.5rem
+    }
+    .footer .media{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .clients img{
+        object-fit: contain;
+    }
+}

@@ -1,0 +1,44 @@
+
+/*start about us*/
+.breadCrumbHolder{background-color: #f5f5f5;}
+.breadCrumbHolder .breadcrumb{padding: 0.5rem; margin: 0; justify-content: center;}
+
+.aboutUs{padding: 4rem 0;}
+.aboutUs h1{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: -0.3rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.aboutUs img{aspect-ratio: 16/9; width: 50%;}
+.aboutUs hr{width: 70%; margin-left: auto; margin-right: auto;/*bootstrap => ms-auto; me-auto; => mx-auto*/}
+
+.aboutFeatures{padding: 0 0 2rem;}
+.aboutFeatures h3{font-family: 'Raleway', sans-serif; letter-spacing: -0.06rem;}
+.aboutFeatures p{margin-bottom: 1.5rem;}
+
+.aboutCEO{background-color: #EEE; padding-top: 2rem;}
+.aboutCEO .lead{line-height: 1.8em;}
+.aboutCEO h2{font-family: 'Raleway', sans-serif;}
+.aboutCEO .btn-primary{
+    background-color: #333;
+    border-color: #333;
+    display: block;
+    margin-bottom: 2rem;
+}
+.aboutCEO img{padding-bottom: 1rem;}
+/*end about us*/
+
+/*start FAQ*/
+.faq{padding: 2rem;}
+.faq h1{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: -0.3rem;
+    font-size: 4rem;
+}
+.faq h1 ~ hr{width: 70%;}
+
+/*.faqQuestion{margin: 2rem;}
+.faqQuestion .accordion-button:not(.collapsed)::after {transform: rotate(90deg);}*/
+.faqQuestion .accordion-header{padding: 0.15rem;}
+/*end FAQ*/

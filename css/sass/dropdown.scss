@@ -1,0 +1,6 @@
+// import mixins
+@use 'helpers/mixins' as *;
+
+#wrap{
+    @include nav-list;
+}

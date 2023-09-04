@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/theme_default.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/style.css">  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap">
+  <title>Bootstrap</title>
+</head>
+<body>
+  <!--start section tool box -->
+  <section class="optionBox">
+    <div class="colorOption">
+      <h5>Color Option</h5>
+      <ul class="list-unstyled">
+        <li data-value="css/theme_default.css"></li>
+        <li data-value="css/theme_purple.css"></li>
+        <li data-value="css/theme_orange.css"></li>
+        <li data-value="css/theme_green.css"></li>
+      </ul>
+    </div>
+    <i class="fa fa-gear fa-2x gearCheck"></i>
+  </section>
+  <!--end section tool box -->
+
+  <!-- Start our navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand hvr-pop" href="#">Salam<span> Inc.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#SupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="SupportedContent">
+        <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAQ</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Programming</a></li>
+              <li><a class="dropdown-item" href="#">Web Design</a></li>
+              <li><a class="dropdown-item" href="#">Desktop</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Web Hosting</a></li>
+            </ul>
+          </li>              
+          <li class="nav-item justify-content-end">
+            <a class="nav-link" href="#">Map</a>
+          </li>              
+          <li class="nav-item justify-content-end">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <!--<form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>-->
+      </div>
+    </div>
+  </nav>
+  <!-- End our navbar -->
+  
+
+  <!--start breadcrumb-->
+  <div class="breadCrumbHolder">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="about.html">FAQ</a></li>
+      </ol>
+    </nav>
+  </div>
+  <!--start breadcrumb-->
+
+  <!--start section FAQ intro-->
+  <section class="faq text-center">
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <hr class="mx-auto">
+        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quae dolore nulla adipisci, cumque velit. Expedita veritatis et omnis excepturi odit. Delectus perferendis necessitatibus voluptatum autem exercitationem, placeat eius inventore?</p>
+    </div>
+  </section>
+  <!--end section FAQ intro-->
+
+  <!--start FAQ Accordion-->
+  <section class="faqQuestion mb-4">
+    <div class="container">
+        <div class="accordion accordion-flush" id="accordionFlush">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                  How to use bootstrap 5?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  How to use media query?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlush">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  How to create slider?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlush">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                   How to create accordion?
+                 </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlush">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi illum tempora vero nihil blanditiis reprehenderit, ad tenetur nam ipsa atque amet asperiores dolore, ea quod architecto veritatis nesciunt quia. Reprehenderit.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!--end FAQ accordion-->
+
+  <!--start section footer-->
+  <section class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <h3>Sitemap</h3>
+          <ul class="list-unstyled tricol">
+            <li>Home</li>
+            <li>About</li>
+            <li>Company</li>
+            <li>Code</li>
+            <li>Design</li>
+            <li>Host</li>
+            <li>Solution</li>
+            <li>Sitemap</li>
+            <li>contact</li>
+          </ul>
+          <ul class="list-unstyled social">
+            <li><img src="images/icon/facebook.png" alt="facebook"  width="48" height="48"></li>
+            <li><img src="images/icon/googleplus.png" alt="googleplus"  width="48" height="48"></li>
+            <li><img src="images/icon/instagram.png" alt="instagram"  width="48" height="48"></li>
+            <li><img src="images/icon/pinterest.png" alt="pinterest"  width="48" height="48"></li>
+            <li><img src="images/icon/twitter.png" alt="twitter"  width="48" height="48"></li>
+            <li><img src="images/icon/whatsapp.png" alt="whatsapp"  width="48" height="48"></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h3>Latest Article</h3>
+          <div class="media">
+            <a class="pull-left" href="#">
+              <img class="media-object" src="images/icon/programming.png" width="64" height="64">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading">Programmin</h4>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </div>
+          </div>
+          <div class="media">
+            <a class="pull-left" href="#">
+              <img class="media-object" src="images/icon/Database.png" width="64" height="64">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading">Database Management</h4>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </div>
+          </div>
+          <div class="media">
+            <a class="pull-left" href="#">
+              <img class="media-object" src="images/icon/server.png" width="64" height="64">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading">Networking</h4>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </div>
+          </div>            
+        </div>
+        <div class="col-lg-4">
+          <h3>Our awesome work</h3>
+          <img class="img-thumbnail" src="images/work/sample01.jpg" width="164" height="118">
+          <img class="img-thumbnail" src="images/work/sample02.jpg" width="164" height="118">
+          <img class="img-thumbnail" src="images/work/sample03.jpg" width="164" height="118">
+          <img class="img-thumbnail" src="images/work/sample04.jpg" width="164" height="118">
+        </div>
+      </div>
+      <div class="copyright text-center">
+        Copyright &copy; 2023 <span>Salam</span> Inc. 
+      </div>
+    </div>
+  </section>
+  <!--end section footer-->
+
+  <!--start scroll to top-->
+  <div id="scrollButton">
+    <i class="fa fa-chevron-up fa-3x"></i>
+  </div>
+  <!--start scroll to top-->
+
+
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/plugin.js"></script>
+</body>
+</html>
